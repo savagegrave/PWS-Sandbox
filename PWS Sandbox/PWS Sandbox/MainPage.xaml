@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:PWS_Sandbox.ViewModels"
+             Title="PWS Sandbox"
+             x:Class="PWS_Sandbox.MainPage">
+    <ContentPage.BindingContext>
+        <local:PWS_Sandbox/>
+    </ContentPage.BindingContext>
+    
+    
+    <StackLayout Padding="20" Spacing="20">
+
+        <Label Text="Username:"/>
+        <Entry Text="{Binding UserName}" Placeholder="Enter Your Name Here"/>
+
+        <Label Text="Email Address:"/>
+        <Entry Text="{Binding EmailAddress}" Placeholder="Enter Your Email Address"/>
+
+
+        <Label Text="{Binding MessageToUser}" 
+           FontSize="Large"/>
+
+
+
+    </StackLayout>
+
+</ContentPage>
